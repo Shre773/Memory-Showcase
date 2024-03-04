@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <script src="https://kit.fontawesome.com/abf9eec131.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="landingPage.css">
+  </head>
+  <body>
+      <h1> Memory Showcase </h1>
+      <div class="container">
+        <a href="#"> <button class="login-btn"> Login </button> </a>
+        <a href="#"> <button class="signup-btn"> Sign Up </button> </a>
+      
+      </div>
+
+     <div class="gallery-wrap">
+      <i class="fa-solid fa-backward" id="backwardBtn"></i>
+      <div class="gallery">
+        <div>
+          <span><img src="images/New folder/img4.png.jpg" alt="images" height="300" width="150" ></span>
+          <span><img src="images/New folder/img5.png.jpg" alt="images" height="300" width="150" ></span>
+          <span><img src="images/New folder/img6.png.jpg" alt="images" height="300" width="150"></span>
+          </div>
+      <div>
+        <span><img src="images/New folder/img1.png.jpg" alt="images" height="300" width="150"></span>
+        <span><img src="images/New folder/img2.png.jpg" alt="images" height="300" width="150"></span>
+        <span><img src="images/New folder/img3.png.jpg" alt="images" height="300" width="150"></span>
+      </div>
+  </div>
+  <i class="fa-solid fa-forward" id="forwardBtn"></i>
+</div>
+<script>
+
+  let scrollContainer = document.querySelector(".gallery");
+  let backwardBtn = document.getElementById("backwardBtn");
+  let forwardBtn = document.getElementById("forwardBtn");
+
+  scrollContainer.addEventListener("wheel" , (evt) =>{
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+    scrollContainer.style.scrollbehavior = "auto";
+  });
+
+  forwardBtn.addEventListener("click" , () =>{
+    scrollContainer.style.scrollbehavior = "smooth";
+    scrollContainer.scrollLeft += 900;
+  });
+
+  backwardBtn.addEventListener("click" , () =>{
+    scrollContainer.style.scrollbehavior = "smooth";
+    scrollContainer.scrollLeft -= 900;
+  });
+
+    </script>
+
+</body>
+  </html>
+  

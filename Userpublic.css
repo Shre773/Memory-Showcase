@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .hero{
+    width: 100%;
+    background: white;
+    color: black;
+  }
+
+  nav{
+    background: white;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user-pic{
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    text-align: right;
+    padding: 0;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+ }
+ nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sub-menu-wrap{
+  /*position: absolute;*/
+  top: 100%;
+  right: 10%;
+  width: 320px;
+}
+.highlight{
+  background: linear-gradient(
+    to bottom,
+    transparent 1%,
+    gray 100%
+  );
+} 
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background-image: ('images/New folder/img4.png.jpg','images/New folder/img5.png.jpg','images/New folder/img6.png.jpg','images/New folder/img1.png.jpg','images/New folder/img2.png.jpg','images/New folder/img3.png.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+h1{
+  font-size: 30px;
+  top: 30%;
+  left: 50%;
+  transform: translate(37px, 100px);
+  text-align: center;
+}
+.container{
+  text-align: right;
+  transform: translateX(-50px);
+}
+
+.login-btn, .signup-btn{
+  color:black;
+  padding: 2px 5px;
+  border:2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.login-btn:hover, .signup-btn:hover{
+  background-color: white;
+}
+
+.gallery {
+  height: 300px;
+  width: 600px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2px;
+  padding: 10px;
+  flex: none;
+}
+
+.gallery div img {
+  width: 100%;
+  filter:grayscale(100%);
+  transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+.gallery div img:hover{
+  filter:grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.mosaic-background{
+  margin: 10px auto;
+  box-shadow: 0px 0px 10px 2px grey;
+  background-size: cover;
+  text-align: center;
+  filter:grayscale(100%);
+  transition: transform 0.5s;
+}
+.mosaic-background:hover{
+  filter:grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+

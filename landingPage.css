@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppons', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+}
+
+h1{
+    font-size: 30px;
+    top: 30%;
+    left: 50%;
+    transform: translate(37px, 100px);
+    text-align: center;
+}
+.container{
+    text-align: right;
+    transform: translateX(-50px);
+}
+
+.login-btn, .signup-btn{
+    color:black;
+    padding: 2px 5px;
+    border:2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.loginbtn:hover, .signupbtn:hover{
+    background-color: white;
+}
+
+.gallery {
+    height: 300px;
+    width: 600px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img {
+    width: 100%;
+    filter:grayscale(100%);
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.gallery div img:hover{
+    filter:grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+

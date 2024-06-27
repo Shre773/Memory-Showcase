@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> User public Page </title>
+    <script src="https://kit.fontawesome.com/abf9eec131.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Userpublic.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <ul>
+           <li><a href="#" About id="About">About</a></li>
+           <li><a href="#" Contact id="Contact"> Contact </a></li>
+           </ul>
+
+     <img src="images/New folder/img5.png.jpg" class="user-pic">
+
+
+     <div class="sub-menu-wrap">
+        <div class="sub-menu">
+            <div class="user-info">
+                <div id="AboutSection">
+                    <p><span class="title-s">Name:</span><span> Shreya Saha </span></p>
+                    <p><span class="title-s">Address:</span><span> Raiganj,Uttar Dinajpur </span></p>
+                    <p> I am Shreya Saha,a 4th year student from Computer science and Engineering domain in Murshidabad College Of Engineering & technology. This is a project on the topic of memory showcasing using HTML,CSS,Javascript.</p>
+                </div>
+                <div id="ContactSection">
+                    <p> Below are the details to reach out to me </p>
+                    <h3 class="mb-4"> Contact Number</h3>
+                    <p><a href="tel://7679071756"> +917679071756</a></p>
+                    <h3 class="mb-4"> Email Id </h3>
+                    <p><a href="mailto:ssyasaha@gmail.com"> ssyasaha2@gmail.com </a></p>
+                    </div>
+                 </div>
+             </div>
+          </div>
+          </nav>
+
+          <div class="mosaic-background">
+            <span><img src="images/New folder/img4.png.jpg" alt="images" height="300" width="150" ></span>
+            <span><img src="images/New folder/img5.png.jpg" alt="images" height="300" width="150" ></span>
+            <span><img src="images/New folder/img6.png.jpg" alt="images" height="300" width="150"></span>
+          <span><img src="images/New folder/img1.png.jpg" alt="images" height="300" width="150"></span>
+          <span><img src="images/New folder/img2.png.jpg" alt="images" height="300" width="150"></span>
+          <span><img src="images/New folder/img3.png.jpg" alt="images" height="300" width="150"></span>
+        </div>
+    </div>
+      
+    
+<script>
+
+document.getElementById('About').addEventListener('click', function() {
+  var AboutSection = document.getElementById('AboutSection');
+  AboutSection.classList.toggle('highlight');
+});
+
+document.body.addEventListener('click', function(event) {
+  var AboutSection = document.getElementById('AboutSection');
+  var About = document.getElementById('About');
+  
+  if (!AboutButton.contains(event.target) && event.target !== About) {
+    AboutSection.classList.remove('highlight');
+  }
+});
+
+document.getElementById('Contact').addEventListener('click', function() {
+  var ContactSection = document.getElementById('ContactSection');
+  ContactSection.classList.toggle('highlight');
+});
+
+document.body.addEventListener('click', function(event) {
+  var ContactSection = document.getElementById('ContactSection');
+  var Contact = document.getElementById('Contact');
+  
+  if (!Contact.contains(event.target) && event.target !== Contact) {
+    ContactSection.classList.remove('highlight');
+  }
+});
+
+
+    </script>
+   </body>
+</html>
